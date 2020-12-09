@@ -14,7 +14,7 @@
 <br /><br />
 
 <label for="name">氏名</label><br />
-<input type="text" name="neme" value="${employee.name}" />
+<input type="text" name="name" value="${employee.name}" />
 <br /><br />
 
 <label for="password">パスワード</label><br />
