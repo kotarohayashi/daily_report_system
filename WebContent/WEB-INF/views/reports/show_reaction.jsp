@@ -38,7 +38,7 @@
                                     pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         <tr>
                             <th>いいね</th>
-                            <td><c:out value="${report.reaction}" /></td>
+                            <td><c:out value="${reaction.id}" /></td>
                         </tr>
                     </tbody>
                 </table>

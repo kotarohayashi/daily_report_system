@@ -35,8 +35,10 @@ public class ReportsEditServlet extends HttpServlet {
         EntityManager em = DBUtil.createEntityManager();
 
         Report  r = em.find(Report.class, Integer.parseInt(request.getParameter("id")));
+        System.out.println(1);
 
         em.close();
+        System.out.println(2);
 
         Employee login_employee = (Employee)request.getSession().getAttribute("login_employee");
         if(r != null && login_employee.getId() == r.getEmployee().getId()) {
