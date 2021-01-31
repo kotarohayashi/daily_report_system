@@ -38,12 +38,14 @@
                                     pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         <tr>
                             <th>いいね</th>
-                            <td><c:out value="${report.reaction}" /></td>
+                            <td>${reactions_count}</td>
                         </tr>
                     </tbody>
                 </table>
                 <br />
+                <form method="POST" action="<c:url value='/reports/update_reaction' />">
                 <button type="submit">いいねする</button>
+                </form>
 
                 <c:if test="${sessionScope.login_employee.id == report.employee.id}">
                     <p>
